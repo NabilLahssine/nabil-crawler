@@ -4,7 +4,11 @@ Nabil Crawler is a plugin that helps WordPress administrator monitor their websi
 
 # Usage
 1- Install the plugin using WordPress dashboard.
+
 2- Access Nabil Crawler & click the launch crawler button.
+
 3- Get information about the internal links in your home page.
+
 4- Use the shortcode [nabilcrawler][/nabilcrawler] to display like sitemap to your website visitors.
+
 5- Access the history of your crawling action.
