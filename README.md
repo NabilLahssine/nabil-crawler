@@ -1,16 +1,10 @@
-# Package Template
-Repository template for our packages
+# Nabil Crawler
+Nabil Crawler is a plugin that helps WordPress administrator monitor their website home page, by getting all the usefull information about all the internal pages that are linked to the home page. This plugin will allow administrators to have a full view about the SEO of their website so they can take actions to improve their rankings. You can find a small [Demo video here](https://youtu.be/8zk6Mbl_psg)  
+
 
 # Usage
-When creating a new repository for a package or a plugin, select this repository as the template. It will initialize the new repository with all the structure & files contained in the template.
-
-# Content
-* `bin/install-wp-tests.sh`: installer for WordPress tests suite
-* `.editorconfig`: config file for your IDE to follow our coding standards
-* `.gitattributes`: list of directories & files excluded from export
-* `.gitignore`: list of directories & files excluded from versioning
-* `.travis.yml`: Travis-CI configuration file
-* `composer.json`: Base composer file to customize for the project
-* `LICENSE`: License file using GPLv3
-* `phpcs.xml`: Base PHP Code Sniffer configuration file to customize for the project
-* `README.md`: The readme displayed on Github, to customize for the project
+1- Install the plugin using WordPress dashboard.
+2- Access Nabil Crawler & click the launch crawler button.
+3- Get information about the internal links in your home page.
+4- Use the shortcode [nabilcrawler][/nabilcrawler] to display like sitemap to your website visitors.
+5- Access the history of your crawling action.
