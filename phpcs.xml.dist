@@ -26,15 +26,57 @@
 
 	<rule ref="WordPress">
         <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
+
+        <!-- Code Review: Disable formatting issues. -->
+
+        <exclude name="Generic.Formatting.MultipleStatementAlignment.NotSameWarning"/>
+        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed"/>
+        <exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
+        <exclude name="Generic.Files.EndFileNewline.NotFound"/>
+        <exclude name="Generic.Classes.OpeningBraceSameLine.SpaceBeforeBrace"/>
+        <exclude name="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+        <exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceBeforeBrace"/>
+
+        <exclude name="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+
+        <exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EndLine"/>
+        <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+		<exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+        <exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound"/>
+
+        <exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket"/>
+        <exclude name="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.EmptyLine"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.Indent"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.OpeningIndent"/>
+
+		<exclude name="WordPress.WhiteSpace.DisallowInlineTabs.NonIndentTabsUsed"/>
+        <exclude name="WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceBeforeStructureOpen"/>
+		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceAfterStructureOpen"/>
+		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceBeforeCloseParenthesis"/>
+		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceAfterCloseParenthesis"/>
+		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceBeforeOpenParenthesis"/>
+		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceAfterOpenParenthesis"/>
+		<exclude name="WordPress.WhiteSpace.OperatorSpacing.SpacingAfter"/>
+		<exclude name="WordPress.WhiteSpace.PrecisionAlignment.Found"/>
+		<exclude name="WordPress.Arrays.CommaAfterArrayItem.NoComma"/>
+		<exclude name="WordPress.Arrays.CommaAfterArrayItem.NoSpaceAfterComma"/>
+		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceBeforeArrayCloser"/>
+		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceAfterArrayOpener"/>
+		<exclude name="WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned"/>
+
+        <!-- Code Review: exclude naming issues. -->
+		<exclude name="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase"/>
+
 	</rule>
     <rule ref="WordPress.WP.I18n">
         <properties>
-            <property name="text_domain" type="array" value="rocket" />
+            <property name="text_domain" type="array" value="nabil-crawler" />
         </properties>
     </rule>
     <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
         <properties>
-            <property name="prefixes" type="array" value="rocket,wp_rocket" />
+            <property name="prefixes" type="array" value="NABIL_CRAWLER, NabilCrawlerProject, nbl_, nabilcrawler_, crawlerNabil" />
         </properties>
     </rule>
     <rule ref="WordPress.Files.FileName">
@@ -46,6 +88,17 @@
 		<exclude name="Squiz.Commenting.FileComment.Missing"/>
 		<exclude name="Squiz.Commenting.FileComment.MissingPackageTag"/>
 		<exclude name="Squiz.Commenting.ClassComment.Missing"/>
+
+		<!-- Code Review: Disable comment issues. -->
+		<exclude name="Squiz.Commenting.FunctionComment.MissingParamComment"/>
+		<exclude name="Generic.Commenting.DocComment.SpacingAfter"/>
+		<exclude name="Squiz.Commenting.InlineComment.NoSpaceBefore"/>
+		<exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+		<exclude name="Squiz.Commenting.InlineComment.WrongStyle"/>
+		<exclude name="Squiz.Commenting.FileComment.WrongStyle"/>
+		<exclude name="Squiz.Commenting.FunctionComment.WrongStyle"/>
+		<exclude name="Squiz.Commenting.FunctionComment.Missing"/>
+
 	</rule>
 
 	<!-- Rules: WordPress Coding Standards - see
